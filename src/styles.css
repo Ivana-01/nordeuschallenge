@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-image: url(./img/bg-blur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    background-color: rgba(219, 255, 244, 0.521);
+    width: 30%;
+    padding: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.homeTitle{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 60px;
+    font-family: 'Noto Serif', serif;
+    color: rgb(32, 32, 32);
+    text-shadow: 2px 2px rgb(5, 5, 5);
+}
+.nordeus{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 10%;
+}
+.signIn{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    width: 80%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.signInLink{
+    text-decoration: none;
+    color: white;
+}
+.signIn:hover{
+    background-color: rgb(17, 17, 17);
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.7);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.signInLink:hover{
+    color: rgba(255, 255, 255, 0.644);
+}
+.signIn:active{
+    background-color: rgb(14, 14, 14);
+    box-shadow: 1px 2px 3px rgba(0,0,0);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.signInLink:active{
+    color: rgba(255, 255, 255, 0.444);
+}
+.signInInput{
+    padding: 10px;
+    margin: 5%;
+    width: 75%;
+    border-radius: 15px;
+    background-color: rgba(17, 17, 17, 0.849);
+    border: none;
+    font-size: 24px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.statsPage{
+    background-color: rgba(14, 14, 14, 0.753);
+    width: 92%;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 50px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    font-family: 'Noto Serif', serif;
+    color: white;
+}
+.statsContainer{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 5%;
+}
+
+.statsTitle, .statsSubtitle{
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 2px 2px rgb(5, 5, 5);
+}
+.statsSubtitle{
+    font-size: 30px;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 3%;
+    background-color: rgba(14, 14, 14, 0.8);
+    border-radius: 50px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.statsBoxTitle{
+    font-size: 16px;
+}
