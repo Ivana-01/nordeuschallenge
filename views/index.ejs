@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %> <!-- uvek koristi - umesto = sa include -->
+    <div class="blogs content">
+        <h2>Blogs</h2>
+        <% if(blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+                <div class="blog">
+                    <a href="/blogs/<%= blog._id %>" class="single"><h3><%= blog.title %></h3></a>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <h1>no blogs</h1>
+        <% } %>
+
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
